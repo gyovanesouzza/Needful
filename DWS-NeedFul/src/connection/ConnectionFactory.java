@@ -10,13 +10,11 @@ import util.Log;
 
 public class ConnectionFactory {
 	static String drive = "com.mysql.jdbc.Driver";
-	private static final String url = "jdbc:mysql://needfuldb.cytszgenicog.sa-east-1.rds.amazonaws.com:3306/needful";
-	private static final String user = "rootneedful";
-	private static final String password = "rootneedful";
+	
 
-	// private static final String url = "jdbc:mysql://localhost:3306/needful";
-	// private static final String user = "root";
-	// private static final String password = "root";
+	 private static final String url = "jdbc:mysql://localhost:3306/needful";
+	private static final String user = "root";
+ private static final String password = "root";
 
 	public static Connection getConnection() throws SQLException, ClassNotFoundException {
 				Class.forName(drive);
